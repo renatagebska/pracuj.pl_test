@@ -1,43 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-06T13:49:47.892997" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-08T14:05:44.093828" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests">
 <suite id="s1-s1" name="TestCase1" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests\TestCase1.robot">
-<test id="s1-s1-t1" name="Open Pracuj.pl and Verify Title - Chrome" line="6">
+<test id="s1-s1-t1" name="Open Pracuj.pl and Verify Title - Chrome" line="7">
 <kw name="Open Browser and Navigate to Pracuj.pl" owner="CommonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-06T13:49:48.013170" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
+<msg time="2024-03-08T14:05:44.221047" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-06T13:49:48.013170" elapsed="4.808948"/>
+<status status="PASS" start="2024-03-08T14:05:44.221047" elapsed="3.643545"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-03-06T13:49:52.822118" elapsed="0.111999"/>
+<status status="PASS" start="2024-03-08T14:05:47.864592" elapsed="0.115267"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-06T13:49:52.939119" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
+<msg time="2024-03-08T14:05:47.988858" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
 <arg>Praca - Pracuj.pl</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-03-06T13:49:52.935117" elapsed="0.004002"/>
+<status status="PASS" start="2024-03-08T14:05:47.979859" elapsed="0.008999"/>
 </kw>
-<status status="PASS" start="2024-03-06T13:49:48.012170" elapsed="4.926949"/>
+<status status="PASS" start="2024-03-08T14:05:44.221047" elapsed="3.767811"/>
 </kw>
-<status status="PASS" start="2024-03-06T13:49:48.012170" elapsed="4.926949"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-08T14:05:47.989858" elapsed="2.063388"/>
+</kw>
+<status status="PASS" start="2024-03-08T14:05:44.220051" elapsed="5.834200"/>
 </test>
-<status status="PASS" start="2024-03-06T13:49:47.907350" elapsed="5.032767"/>
+<status status="PASS" start="2024-03-08T14:05:44.109821" elapsed="5.947317"/>
 </suite>
-<status status="PASS" start="2024-03-06T13:49:47.892997" elapsed="5.048121"/>
+<suite id="s1-s2" name="TestCase2" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests\TestCase2.robot">
+<test id="s1-s2-t1" name="Accept Cookies" line="7">
+<kw name="Open Browser and Navigate to Pracuj.pl" owner="CommonKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T14:05:50.063147" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-08T14:05:50.063147" elapsed="3.474806"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-08T14:05:53.537953" elapsed="0.115037"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-08T14:05:53.656993" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
+<arg>Praca - Pracuj.pl</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-08T14:05:53.652990" elapsed="0.004003"/>
+</kw>
+<status status="PASS" start="2024-03-08T14:05:50.063147" elapsed="3.593846"/>
+</kw>
+<kw name="Accept Cookies" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T14:05:53.657989" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[7]/div/div/div[3]/div/button[1]'.</msg>
+<arg>xpath=//*[@id="__next"]/div[7]/div/div/div[3]/div/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T14:05:53.657989" elapsed="0.387845"/>
+</kw>
+<status status="PASS" start="2024-03-08T14:05:53.656993" elapsed="0.388841"/>
+</kw>
+<kw name="Close Pracuj.pl" owner="CommonKeywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-08T14:05:54.045834" elapsed="2.077875"/>
+</kw>
+<status status="PASS" start="2024-03-08T14:05:54.045834" elapsed="2.078910"/>
+</kw>
+<status status="PASS" start="2024-03-08T14:05:50.062149" elapsed="6.063594"/>
+</test>
+<status status="PASS" start="2024-03-08T14:05:50.058155" elapsed="6.069589"/>
+</suite>
+<status status="PASS" start="2024-03-08T14:05:44.095821" elapsed="12.034921"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCase1">Tests.TestCase1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TestCase2">Tests.TestCase2</stat>
 </suite>
 </statistics>
 <errors>

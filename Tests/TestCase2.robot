@@ -4,7 +4,8 @@ Resource  ../Resources/Keywords/CommonKeywords.robot
 Resource  ../Resources/Variables/CommonVariables.robot
 
 *** Test Cases ***
-Open Pracuj.pl and Verify Title - Chrome
+Accept Cookies
     Open Browser and Navigate to Pracuj.pl
-    Close Browser
+    Accept Cookies
+    Close Pracuj.pl
 
