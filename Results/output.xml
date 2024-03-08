@@ -1,90 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-08T14:05:44.093828" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-08T16:01:18.842886" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests">
 <suite id="s1-s1" name="TestCase1" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests\TestCase1.robot">
-<test id="s1-s1-t1" name="Open Pracuj.pl and Verify Title - Chrome" line="7">
+<test id="s1-s1-t1" name="Open Pracuj.pl and Verify Title - Chrome" line="6">
 <kw name="Open Browser and Navigate to Pracuj.pl" owner="CommonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-08T14:05:44.221047" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
+<msg time="2024-03-08T16:01:18.968731" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-08T14:05:44.221047" elapsed="3.643545"/>
+<status status="PASS" start="2024-03-08T16:01:18.967727" elapsed="5.144624"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-03-08T14:05:47.864592" elapsed="0.115267"/>
+<status status="PASS" start="2024-03-08T16:01:24.112351" elapsed="0.122463"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-08T14:05:47.988858" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
+<msg time="2024-03-08T16:01:24.237814" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
 <arg>Praca - Pracuj.pl</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-03-08T14:05:47.979859" elapsed="0.008999"/>
+<status status="PASS" start="2024-03-08T16:01:24.234814" elapsed="0.003000"/>
 </kw>
-<status status="PASS" start="2024-03-08T14:05:44.221047" elapsed="3.767811"/>
+<status status="PASS" start="2024-03-08T16:01:18.967727" elapsed="5.270087"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-08T14:05:47.989858" elapsed="2.063388"/>
+<status status="PASS" start="2024-03-08T16:01:24.237814" elapsed="2.088146"/>
 </kw>
-<status status="PASS" start="2024-03-08T14:05:44.220051" elapsed="5.834200"/>
+<status status="PASS" start="2024-03-08T16:01:18.967727" elapsed="7.359171"/>
 </test>
-<status status="PASS" start="2024-03-08T14:05:44.109821" elapsed="5.947317"/>
+<status status="PASS" start="2024-03-08T16:01:18.856886" elapsed="7.471990"/>
 </suite>
 <suite id="s1-s2" name="TestCase2" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests\TestCase2.robot">
-<test id="s1-s2-t1" name="Accept Cookies" line="7">
+<test id="s1-s2-t1" name="Accept Cookies" line="6">
 <kw name="Open Browser and Navigate to Pracuj.pl" owner="CommonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-08T14:05:50.063147" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
+<msg time="2024-03-08T16:01:26.334866" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-08T14:05:50.063147" elapsed="3.474806"/>
+<status status="PASS" start="2024-03-08T16:01:26.334866" elapsed="4.279233"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-03-08T14:05:53.537953" elapsed="0.115037"/>
+<status status="PASS" start="2024-03-08T16:01:30.614099" elapsed="0.115658"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-08T14:05:53.656993" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
+<msg time="2024-03-08T16:01:30.732758" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
 <arg>Praca - Pracuj.pl</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-03-08T14:05:53.652990" elapsed="0.004003"/>
+<status status="PASS" start="2024-03-08T16:01:30.729757" elapsed="0.004001"/>
 </kw>
-<status status="PASS" start="2024-03-08T14:05:50.063147" elapsed="3.593846"/>
+<status status="PASS" start="2024-03-08T16:01:26.334866" elapsed="4.398892"/>
 </kw>
 <kw name="Accept Cookies" owner="CommonKeywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-08T14:05:53.657989" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[7]/div/div/div[3]/div/button[1]'.</msg>
-<arg>xpath=//*[@id="__next"]/div[7]/div/div/div[3]/div/button[1]</arg>
+<msg time="2024-03-08T16:01:30.734758" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[7]/div/div/div[3]/div/button[1]'.</msg>
+<arg>${ACCEPT_COOKIES_XPATH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-08T14:05:53.657989" elapsed="0.387845"/>
+<status status="PASS" start="2024-03-08T16:01:30.733758" elapsed="0.489582"/>
 </kw>
-<status status="PASS" start="2024-03-08T14:05:53.656993" elapsed="0.388841"/>
+<status status="PASS" start="2024-03-08T16:01:30.733758" elapsed="0.489582"/>
 </kw>
 <kw name="Close Pracuj.pl" owner="CommonKeywords">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-08T14:05:54.045834" elapsed="2.077875"/>
+<status status="PASS" start="2024-03-08T16:01:31.223340" elapsed="2.074705"/>
 </kw>
-<status status="PASS" start="2024-03-08T14:05:54.045834" elapsed="2.078910"/>
+<status status="PASS" start="2024-03-08T16:01:31.223340" elapsed="2.074705"/>
 </kw>
-<status status="PASS" start="2024-03-08T14:05:50.062149" elapsed="6.063594"/>
+<status status="PASS" start="2024-03-08T16:01:26.334866" elapsed="6.964169"/>
 </test>
-<status status="PASS" start="2024-03-08T14:05:50.058155" elapsed="6.069589"/>
+<status status="PASS" start="2024-03-08T16:01:26.330867" elapsed="6.971234"/>
 </suite>
-<status status="PASS" start="2024-03-08T14:05:44.095821" elapsed="12.034921"/>
+<suite id="s1-s3" name="TestCase3" source="C:\Users\Renata\PycharmProjects\pracuj.pl_test\Tests\TestCase3.robot">
+<test id="s1-s3-t1" name="Add Position" line="6">
+<kw name="Open Browser and Navigate to Pracuj.pl" owner="CommonKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:33.310029" level="INFO">Opening browser 'chrome' to base url 'https://www.pracuj.pl/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-08T16:01:33.310029" elapsed="3.985476"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-08T16:01:37.295505" elapsed="0.120961"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:37.419465" level="INFO">Page title is 'Praca - Pracuj.pl'.</msg>
+<arg>Praca - Pracuj.pl</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-08T16:01:37.416466" elapsed="0.002999"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:33.310029" elapsed="4.109436"/>
+</kw>
+<kw name="Accept Cookies" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:37.420465" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[7]/div/div/div[3]/div/button[1]'.</msg>
+<arg>${ACCEPT_COOKIES_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:37.420465" elapsed="0.415165"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:37.419465" elapsed="0.416165"/>
+</kw>
+<kw name="Click Name Element" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:37.836630" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[1]/div/div/div'.</msg>
+<arg>${NAME_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:37.836630" elapsed="0.341724"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:37.836630" elapsed="0.341724"/>
+</kw>
+<kw name="Enter Job Title" owner="CommonKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.179354" level="INFO">Typing text 'Power Platform Developer' into text field 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[1]/div/div/div/input'.</msg>
+<arg>${NAME_INPUT_XPATH}</arg>
+<arg>${JOB_TITLE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.179354" elapsed="0.167000"/>
+</kw>
+<arg>Power Platform Developer</arg>
+<status status="PASS" start="2024-03-08T16:01:38.179354" elapsed="0.167000"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:33.309033" elapsed="5.037321"/>
+</test>
+<test id="s1-s3-t2" name="Choose Job Category Element" line="12">
+<kw name="Click Category Element" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.347352" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[2]/div/div/div'.</msg>
+<arg>${CATEGORY_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.347352" elapsed="0.110908"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.347352" elapsed="0.110908"/>
+</kw>
+<kw name="Choose Ecommerce" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.459259" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[14]/div/div/span[1]'.</msg>
+<arg>${ECOMMERCE_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.459259" elapsed="0.072000"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.458260" elapsed="0.072999"/>
+</kw>
+<kw name="Choose Software Development" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.532258" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[17]/div/div/span[1]'.</msg>
+<arg>${SOFTWARE_DEVELOPMENT_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.531259" elapsed="0.042999"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.531259" elapsed="0.042999"/>
+</kw>
+<kw name="Choose Quality Control" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.575258" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[18]/div/div/span[1]'.</msg>
+<arg>${QUALITY_CONTROL_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.575258" elapsed="0.041000"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.574258" elapsed="0.042000"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.347352" elapsed="0.268906"/>
+</test>
+<test id="s1-s3-t3" name="Add Location" line="18">
+<kw name="Click Location Element" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.618260" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/div'.</msg>
+<arg>${LOCATION_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.618260" elapsed="0.047156"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.617258" elapsed="0.048158"/>
+</kw>
+<kw name="Enter Location" owner="CommonKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.666417" level="INFO">Typing text 'Warszawa' into text field 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[1]/div[3]/div/div/div/input'.</msg>
+<arg>${LOCATION_INPUT_XPATH}</arg>
+<arg>${LOCATION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.666417" elapsed="0.060466"/>
+</kw>
+<arg>Warszawa</arg>
+<status status="PASS" start="2024-03-08T16:01:38.666417" elapsed="0.060466"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.617258" elapsed="0.109625"/>
+</test>
+<test id="s1-s3-t4" name="Search Jobs" line="22">
+<kw name="Click Search Button" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:38.728882" level="INFO">Clicking element 'xpath=//*[@id="__next"]/section[1]/div[2]/div[2]/div/div[2]/button'.</msg>
+<arg>${SEARCH_BUTTON_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:38.727882" elapsed="4.843223"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.727882" elapsed="4.843223"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:38.727882" elapsed="4.843223"/>
+</test>
+<test id="s1-s3-t5" name="Choose Job Level" line="25">
+<kw name="Choose Job Level - Junior" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:43.572104" level="INFO">Clicking element 'xpath=//*[@id="relative-wrapper"]/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/div/div/div[3]/span[1]'.</msg>
+<arg>${JUNIOR_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:43.572104" elapsed="0.063082"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:43.572104" elapsed="0.063082"/>
+</kw>
+<kw name="Choose Job Level - Mid" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:43.636185" level="INFO">Clicking element 'xpath=//*[@id="relative-wrapper"]/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/div/div/div[4]/span[1]'.</msg>
+<arg>${MID_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:43.635186" elapsed="0.063462"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:43.635186" elapsed="0.063462"/>
+</kw>
+<kw name="Choose Job Level - Senior" owner="CommonKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-08T16:01:43.699645" level="INFO">Clicking element 'xpath=//*[@id="relative-wrapper"]/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/div/div/div[5]/span[1]'.</msg>
+<arg>${SENIOR_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-08T16:01:43.699645" elapsed="0.047999"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:43.699645" elapsed="0.047999"/>
+</kw>
+<status status="PASS" start="2024-03-08T16:01:43.571105" elapsed="0.176539"/>
+</test>
+<status status="PASS" start="2024-03-08T16:01:33.304041" elapsed="10.444603"/>
+</suite>
+<status status="PASS" start="2024-03-08T16:01:18.843887" elapsed="24.905758"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="7" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCase1">Tests.TestCase1</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s2" name="TestCase2">Tests.TestCase2</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s3" name="TestCase3">Tests.TestCase3</stat>
 </suite>
 </statistics>
 <errors>
