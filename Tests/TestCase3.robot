@@ -26,3 +26,6 @@ Choose Job Level
     Choose Job Level - Junior
     Choose Job Level - Mid
     Choose Job Level - Senior
+
+Choose Type of Contract
+    Choose Type Of Contract - Contract Of Employment

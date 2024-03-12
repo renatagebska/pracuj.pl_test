@@ -26,18 +26,6 @@ Enter Keyword
     [Arguments]  ${KEYWORD}
     Input Text  ${NAME_INPUT_XPATH}  ${KEYWORD}
 
-Click Category Element
-    Click Element  ${CATEGORY_XPATH}
-
-Choose Ecommerce
-    Click Element  ${ECOMMERCE_XPATH}
-
-Choose Software Development
-    Click Element  ${SOFTWARE_DEVELOPMENT_XPATH}
-
-Choose Quality Control
-    Click Element  ${QUALITY_CONTROL_XPATH}
-
 Click Location Element
     Click Element  ${LOCATION_XPATH}
 
@@ -48,14 +36,20 @@ Enter Location
 Click Search Button
     Click Element  ${SEARCH_BUTTON_XPATH}
 
-Choose Job Level - Junior
-    Click Element  ${JUNIOR_XPATH}
+Scroll down
+    Execute JavaScript  window.scrollTo(0, 1000)
+    Sleep  3
 
-Choose Job Level - Mid
-    Click Element  ${MID_XPATH}
+Show Offers
+    Click Element  ${SHOW_OFFERS_BUTTON_XPATH}
 
-Choose Job Level - Senior
-    Click Element  ${SENIOR_XPATH}
+Sort Jobs By Latest Jobs
+    Click Element  ${SORT_BUTTON_XPATH}
+    Click Element  ${SORT_BY_LATEST_XPATH}
+
+Sort Jobs By Highest Salary
+    Click Element  ${SORT_BUTTON_XPATH}
+    Click Element  ${SORT_BY_HIGHEST_SALARY_XPATH}
 
 Close Pracuj.pl
     Close Browser
