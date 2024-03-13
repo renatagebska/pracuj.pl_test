@@ -1,3 +1,2 @@
-
 robot Tests                         - run Robot Framework tests
 robot --outputdir Results Tests/    - moves the log, output and report files to a Results directory

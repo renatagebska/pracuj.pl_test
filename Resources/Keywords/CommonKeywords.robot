@@ -36,8 +36,9 @@ Enter Location
 Click Search Button
     Click Element  ${SEARCH_BUTTON_XPATH}
 
-Scroll down
-    Execute JavaScript  window.scrollTo(0, 1000)
+Scroll To Distance
+    [Arguments]  ${DISTANCE}
+    Execute JavaScript  window.scrollTo(0, ${DISTANCE})
     Sleep  3
 
 Show Offers
